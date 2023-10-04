@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) Authentication demo project with [`next
 
 ## Getting Started
 
-First, define Environment variables in .env.local file for github login GITHUB_CLIENT_ID & GITHUB_SECRET, and for NextAuth configurations, NEXTAUTH_SECRET,NEXTAUTH_URL and JWT_SECRET_KEY
+First, define Environment variables in .env.local file for github login GITHUB_CLIENT_ID & GITHUB_SECRET, and for NextAuth configurations, NEXTAUTH_SECRET, NEXTAUTH_URL and JWT_SECRET_KEY
 
 Then start development server:
 
