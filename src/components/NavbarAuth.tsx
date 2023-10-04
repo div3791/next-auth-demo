@@ -14,8 +14,9 @@ const NavbarAuth = () => {
         <>
             {
                 (session && session?.user) ?
-                    <span className="flex space-x-10">
-                        <Image className="rounded-full shadow-lg" src={session.user.image as string} alt="github" width={50} height={50} />
+                    <span className="flex space-x-10 justify-center items-center">
+                        <p>{session?.user.name}</p>
+                        {session.user.image && <Image className="rounded-full shadow-lg" src={session.user.image as string} alt="github" width={50} height={50} />}
                         <Button onClick={(e) => signOut()}>Logout</Button>
                     </span> :
                     <span className="flex space-x-4">

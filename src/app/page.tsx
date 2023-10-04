@@ -12,7 +12,7 @@ export default async function Home() {
       {
         session ? <span className="flex flex-col justify-center items-center">
           <h1 className="text-lg font-semibold my-4">Hey, {session?.user?.name}</h1>
-          <Image className="rounded-lg shadow-lg" src={session?.user?.image as string} alt="github" width={140} height={140} />
+          {session.user?.image && <Image className="rounded-lg shadow-lg" src={session?.user?.image as string} alt="github" width={140} height={140} />}
         </span> : <></>
       }
     </main>
